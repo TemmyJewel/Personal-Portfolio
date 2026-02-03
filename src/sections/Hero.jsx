@@ -1,6 +1,8 @@
 import {Button} from "@/components/Button";
-import { ArrowRight, Github, Twitter, Linkedin, ChevronDown, Download } from 'lucide-react'
+import { ArrowRight, Github, Twitter, Linkedin, ChevronDown, Download, Atom, Puzzle, BookOpen, Palette } from 'lucide-react'
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
+import { useEffect, useState } from "react";
+import Typewriter from 'typewriter-effect';
 
 const skills = [
     "HTML",
@@ -17,21 +19,72 @@ const skills = [
     "Vercel"
 ];
 
+// const titles = [
+//     {
+//         about: "React Developer",
+//         icon: Atom
+//     },
+//     {
+//         about: "JavaScript Problem Solver",
+//         icon: Puzzle
+//     },
+//     {
+//         about: "Continuous Learner",
+//         icon: BookOpen
+//     },
+//     {
+//         about: "UI-Focused Developer",
+//         icon: Palette
+//     },
+// ]
+
 
 export const Hero = () => {
+
+    //Usestate for typewriting effect
+    // const [wordIndex, setWordIndex] = useState(0);
+    // const [isDeleting, setIsDeleting] = useState(false);
+    // const [displayText, setDisplayText] = useState(false);
+
+    // Typewriting UseEffecr
+    // useEffect(() => {
+    //     const currentWord = titles[wordIndex].about;
+    //     const speed = isDeleting ? 50 : 150;
+
+    //     const timeout = setTimeout(() => {
+    //         if(!isDeleting){
+    //             //typing
+    //             if(displayText.length < currentWord.length){
+    //                 setDisplayText(currentWord.substring(0, displayText.length + 1));
+    //             }else {
+    //                 setTimeout(() => setIsDeleting(true), 1000);
+    //             }
+    //         }else {
+    //             //deleting
+    //             if(displayText.length === currentWord.length){
+    //                 setDisplayText(currentWord.substring(0, displayText.length - 1))
+    //             }else{
+    //                 setIsDeleting(false);
+    //                 setWordIndex((prev) => (prev+1) % titles.length)
+    //             }
+    //         }
+    //     }, speed);
+    //     return () => clearTimeout(timeout);
+    // }, [displayText, isDeleting, wordIndex])
+
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden">
             {/* Background */}
             <div className="absolute inset-0">
                 <img 
-                    src="/hero-bg.jpg" 
+                    src="/purple-background.png" 
                     alt="hero image" 
-                    className="w-full h-full object-cover opacity-40"
+                    className="w-full h-full object-cover opacity-30"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/80 to-background"/>
             </div>
 
-            {/* Green Dots */}
+            {/* Purple Dots */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(30)].map((_, i) => (
                     <div 
@@ -63,16 +116,26 @@ export const Hero = () => {
                         {/* HeadLine */}
                         <div className="space-y-4">
                             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                                Crafting <span className="text-primary glow-text">digital</span>
-                                <br />
-                                experiences with 
+                                Hi, I'm
                                 <br />
                                 <span className="font-serif italic text-primary glow-text">
-                                    precision.
+                                    Temilade
                                 </span>
                             </h1>
+
+                            <div className="text-2xl font-bold bg-gradient-to-r from-pink-300 to-[#b285b5] bg-clip-text text-transparent inline-block">
+                                <Typewriter
+                                    options={{
+                                        strings: ["React Developer", "JavaScript Problem Solver", "Continuous Learner", "UI-Focused Developer"],
+                                        autoStart: true,
+                                        loop: true,
+                                        pauseFor: 2000
+                                    }}
+                                />
+                            </div>
+
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                Hi, I'm Temilade - a passionate software engineer specializing in building
+                                I'm a passionate software engineer specializing in building
                                 React applications with precision. I build scalable, performant web 
                                 applications that users love.
                             </p>
@@ -85,7 +148,12 @@ export const Hero = () => {
                             </Button>
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5 inline-block mr-2" />
-                                Download CV
+                                <a
+                                    href="/Temilade Omoyeni CV.pdf" // Path relative to the public folder
+                                    download="Temilade Omoyeni CV.pdf" // The filename the user will see when saving
+                                >
+                                    Download CV
+                                </a>
                             </AnimatedBorderButton>
                         </div>
 
@@ -130,15 +198,15 @@ export const Hero = () => {
                                     </div>
                                 </div>
                                 {/* Stats Badge */}
-                                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                                {/* <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
                                     <div className="text-2xl font-bold text-primary">2+</div>
                                     <div className="text-xs text-muted-foreground">Years Exp.</div>
                                     
-                                    {/* <div className="flex items-center gap-2">
+                                    <div className="flex items-center gap-2">
                                         <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"/>
                                         <span className="text-sm font-medium">5+ Projects</span>
-                                    </div> */}
-                                </div>
+                                    </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
