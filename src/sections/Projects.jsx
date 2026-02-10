@@ -3,37 +3,37 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
     {
-        title: "Project One",
-        description: "Description for project one.",
-        image: '/Projects/project1.png',
+        title: "Task Manager and Notes Web Application",
+        description: "A productivity web application that allows users to create, edit, and delete tasks while managing personal notes in one centralized platform.",
+        image: '/Projects/NotesApp.png',
         tags: ['React', 'CSS'],
-        link: "#",
-        github: "#"
+        link: "https://planner-app-one-delta.vercel.app/",
+        github: "https://github.com/TemmyJewel/Planner-App"
     },
     {
-        title: "Project Two",
-        description: "Description for project two.",    
-        image: '/Projects/project2.png',
-        tags: ['JavaScript', 'HTML'],
-        link: "#",
-        github: "#"
+        title: "Simple Weather App",
+        description: "A simple weather app that tells the weather globally, and change between different temperature unit.",    
+        image: '/Projects/WeatherApp.png',
+        tags: ['JavaScript', 'HTML', 'CSS'],
+        link: "https://weather-app-three-eosin-98.vercel.app/",
+        github: "https://github.com/TemmyJewel/Weather-App"
     },
-    {
-        title: "Project Three",
-        description: "Description for project three.",  
-        image: '/Projects/project3.png',
-        tags: ['Vue', 'Tailwind'],
-        link: "#",
-        github: "#"
-    },
-    {
-        title: "Project Four",
-        description: "Description for project four.",
-        image: '/Projects/project4.png',
-        tags: ['Angular', 'Sass'],
-        link: "#",
-        github: "#"
-    }
+    // {
+    //     title: "Project Three",
+    //     description: "Description for project three.",  
+    //     image: '/Projects/project3.png',
+    //     tags: ['Vue', 'Tailwind'],
+    //     link: "#",
+    //     github: "#"
+    // },
+    // {
+    //     title: "Project Four",
+    //     description: "Description for project four.",
+    //     image: '/Projects/project4.png',
+    //     tags: ['Angular', 'Sass'],
+    //     link: "#",
+    //     github: "#"
+    // }
 ];
 
 
@@ -47,7 +47,7 @@ export const Projects = () => {
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
                     <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Featured Work
+                        My Work
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">
                         Projects that
@@ -82,13 +82,15 @@ export const Projects = () => {
                                 {/* Overlay Links */}
                                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <a 
-                                        href={project.link} 
+                                        href={project.link}
+                                        target="_blank"
                                         className="p-3 rounded-full glass hover:bg-primary hover:primary-foreground transition-all"
                                     >
                                         <ArrowUpRight className="w-5 h-5"/>
                                     </a>
                                     <a 
-                                        href={project.github} 
+                                        href={project.github}
+                                        target="_blank" 
                                         className="p-3 rounded-full glass hover:bg-primary hover:primary-foreground transition-all"
                                     >
                                         <Github className="w-5 h-5"/>
@@ -120,12 +122,12 @@ export const Projects = () => {
                 </div>
                 
                 {/* View All Projects Button */}
-                <div className="text-center mt-12 animate-fade-in animation-delay-500">
+                {/*<div className="text-center mt-12 animate-fade-in animation-delay-500">
                     <AnimatedBorderButton>
                         <ArrowUpRight className="w-5 h-5 inline-block mr-2" />
                         View All Projects
                     </AnimatedBorderButton>
-                </div>
-            </div>
+                </div>*/}
+            </div> 
         </section>);
 }

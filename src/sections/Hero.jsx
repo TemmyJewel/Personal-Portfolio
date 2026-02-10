@@ -91,7 +91,7 @@ export const Hero = () => {
                         key={i}
                         className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                         style={{
-                            backgroundColor: "#20B2a6",
+                            backgroundColor: "#b285b5",
                             left: `${Math.random() * 100}%`,
                             top: `${Math.random() * 100}%`,
                             animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
@@ -144,7 +144,9 @@ export const Hero = () => {
                         {/* Call to Action */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
                             <Button size="lg">
-                                Get in Touch <ArrowRight className="w-5 h-5" />
+                                <a href="#contact">Get in Touch </a> 
+                                <a href ="#contact"><ArrowRight className="w-5 h-5" /></a>
+                                
                             </Button>
                             <AnimatedBorderButton>
                                 <Download className="w-5 h-5 inline-block mr-2" />
@@ -159,15 +161,15 @@ export const Hero = () => {
 
                         {/* Social Links */}
                         <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-                            <span className="text-sm text-muted-foreground">Follow Me: </span>
+                            {/* <span className="text-sm text-muted-foreground">Follow Me: </span> */}
                             {[
-                                {icon: Github, 'href': '#'}, 
-                                {icon: Linkedin, 'href': '#'}, 
-                                {icon: Twitter, 'href': '#'}
+                                {icon: Github, 'href': 'https://github.com/TemmyJewel'}, 
+                                {icon: Linkedin, 'href': 'https://www.linkedin.com/in/temilade-omoyeni-a68b142b3/'}
                             ].map((social, index) => (
                                 <a 
                                     key={index} 
                                     href={social.href}
+                                    target="_blank"
                                     className="p-2 glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                         {<social.icon className="w-5 h-5"/>}</a>

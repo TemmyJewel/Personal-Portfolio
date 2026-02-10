@@ -44,16 +44,14 @@ export const About = () => {
 
                         <div className="space-y-6 text-lg text-muted-foreground animate-fade-in animation-delay-200">
                             <p>
-                                I build interactive and responsive web interfaces using HTML, CSS, JavaScript, and React, focusing on clean structure, usability, and performance. I design components with reusability in mind and pay close attention to how layouts adapt across different screen sizes. My work emphasizes clarity in both the user interface and the underlying component structure.
+                                I'm a <span className="text-primary">Frontend Developer</span> passionate about creating structured, accessible, and visually engaging web solutions. My core focus is on building functional, performant, and user-friendly applications.
                             </p>
 
                             <p>
-                                I use React to manage dynamic behavior, handle user interactions, and maintain predictable application state. I am comfortable working with components, props, hooks, and conditional rendering to create smooth and responsive user experiences. I enjoy breaking complex interfaces into smaller, logical pieces and ensuring each part behaves correctly within the larger application.
+                                I use <span className="text-primary">React</span> to manage dynamic behavior, handle user interactions, and maintain predictable application state. I am comfortable working with components, props, hooks, and conditional rendering to create smooth and responsive user experiences. I enjoy breaking complex interfaces into smaller, logical pieces and ensuring each part behaves correctly within the larger application.
                             </p>
 
-                            <p>
-                                I continuously improve my frontend skills by building projects from scratch and refining my understanding of modern frontend patterns. Through hands-on practice with React and core web technologies, I focus on writing efficient, scalable client-side code and improving how applications are structured as they grow in complexity.
-                            </p>
+                            
                         </div>
 
                         <div className="glass rounded-2xl p-6 glow-border animate-fade-in animate-delay-300">
