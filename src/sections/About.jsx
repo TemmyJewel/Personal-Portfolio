@@ -44,11 +44,11 @@ export const About = () => {
 
                         <div className="space-y-6 text-lg text-muted-foreground animate-fade-in animation-delay-200">
                             <p>
-                                I'm a <span className="text-primary">Frontend Developer</span> passionate about creating structured, accessible, and visually engaging web solutions. My core focus is on building functional, performant, and user-friendly applications.
+                                I'm a <span className="text-primary">Fullstack Developer</span> focused on building functional, user-centered web applications end to end.
                             </p>
 
                             <p>
-                                I use <span className="text-primary">React</span> to manage dynamic behavior, handle user interactions, and maintain predictable application state. I am comfortable working with components, props, hooks, and conditional rendering to create smooth and responsive user experiences. I enjoy breaking complex interfaces into smaller, logical pieces and ensuring each part behaves correctly within the larger application.
+                                I use <span className="text-primary">React</span> develop intuitive and interactive interfaces;with <span className="text-primary">PHP</span>, I handle backend logic, data flow, and system structure. I enjoy turning complex ideas into clean, maintainable solutions that scale.
                             </p>
 
                             
@@ -56,7 +56,7 @@ export const About = () => {
 
                         <div className="glass rounded-2xl p-6 glow-border animate-fade-in animate-delay-300">
                             <p className="text-lg font-medium italic text-foreground">
-                                My mission is to build reliable, intuitive web applications through clean, efficient code and continuous learning.</p>
+                                My goal is to design and build fullstack applications that are structured, performant, and built with clarity, always learning and refining along the way.</p>
                         </div>
                     </div>
 

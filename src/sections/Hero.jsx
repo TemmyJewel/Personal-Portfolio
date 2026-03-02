@@ -9,6 +9,7 @@ const skills = [
     "CSS",
     "React",
     "JavaScript",
+    "PHP",
     "Node.js",
     "Tailwind CSS",
     "MySQL",
@@ -16,6 +17,7 @@ const skills = [
     "Git",
     "GitHub",
     "Figma",
+    "Xampp",
     "Vercel"
 ];
 
@@ -109,7 +111,7 @@ export const Hero = () => {
                         <div className="animate-fade-in">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse"/>
-                                    Software Engineer ~ React Developer ~ Data Science Enthusiast
+                                    Software Engineer ~ Fullstack Developer ~ Data Science Enthusiast
                             </span>
                         </div>
 
@@ -126,7 +128,7 @@ export const Hero = () => {
                             <div className="text-2xl font-bold bg-gradient-to-r from-pink-300 to-[#b285b5] bg-clip-text text-transparent inline-block">
                                 <Typewriter
                                     options={{
-                                        strings: ["React Developer", "JavaScript Problem Solver", "Continuous Learner", "UI-Focused Developer"],
+                                        strings: ["Fullstack Developer", "JavaScript Problem Solver", "Continuous Learner"],
                                         autoStart: true,
                                         loop: true,
                                         pauseFor: 2000
@@ -135,9 +137,7 @@ export const Hero = () => {
                             </div>
 
                             <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                                I'm a passionate software engineer specializing in building
-                                React applications with precision. I build scalable, performant web 
-                                applications that users love.
+                                I’m a full-stack developer who loves building things that work well. From backend architecture to frontend details, I build scalable, performant web apps with precision and purpose.
                             </p>
                         </div>
 
